@@ -38,9 +38,11 @@ function HomePage() {
   return (
     <Container>
       <div className="component-placeholder">
+        <Container>
         <h2>
           <Badge bg="secondary">What even is a cryptocurrency</Badge>
         </h2>
+        </Container>
 
         <br></br>
         <div className="container">

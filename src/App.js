@@ -7,11 +7,12 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Form from './Form/Form';
+import './App.css';
 
 function App() {
   return (
     <div>
-      <Link to="/"> Home Page</Link>
+      <Link to="/"> Home</Link>
 
       {'   |    '}
 
@@ -19,7 +20,7 @@ function App() {
 
       {'   |    '}
 
-      <Link to="/contact">Form</Link>
+      <Link to="/contact">Contact Us</Link>
       {'   |    '}
 
    

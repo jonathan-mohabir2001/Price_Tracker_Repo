@@ -47,7 +47,14 @@ function App() {
 }
 
 function HomePage() {
-  return <></>;
+  return (
+    <div>
+      <>
+        <Button> Test button </Button>
+      </>
+      ;
+    </div>
+  );
 }
 
 function Call() {

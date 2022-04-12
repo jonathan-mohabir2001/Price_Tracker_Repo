@@ -12,6 +12,8 @@ import Badge from 'react-bootstrap/Badge';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import Form from './Form/Form';
+import './App.css';
 
 function App() {
   return (
@@ -34,7 +36,6 @@ function App() {
           </Container>
         </Navbar>
       </>
-
       <div>
         <Routes>
           <Route path="/home" element={<HomePage />}></Route>
@@ -69,14 +70,6 @@ function Coins() {
   return (
     <div>
       <h1> JOYDEEP DISPLAYING COINS price data </h1>
-    </div>
-  );
-}
-
-function Form() {
-  return (
-    <div>
-      <h1> Eliaf form component part for audince input </h1>
     </div>
   );
 }

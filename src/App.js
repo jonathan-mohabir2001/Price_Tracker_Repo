@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
-import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
+import { Navbar, Nav, NavbarBrand, Button } from 'react-bootstrap';
 
 import Badge from 'react-bootstrap/Badge';
 

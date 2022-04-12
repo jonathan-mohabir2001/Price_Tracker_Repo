@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { useState } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import axios from 'axios';
 
 import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
 
@@ -72,30 +73,36 @@ function HomePage() {
           any given point of time.
         </p>
 
-
-        <h3> So why should we even consider using it?</h3> 
+        <h3> So why should we even consider using it?</h3>
         <br></br>
 
         <h4>It is permisionless</h4>
-        <p> 
-          No centralized entity can dictate your use with it. Whether it be creating 
-          a new wallet address,  
+        <p>
+          No centralized entity can dictate your use with it. Whether it be
+          creating a new wallet address,
         </p>
-
       </Container>
     </div>
   );
 }
 
-function Call() {
-  return (
-    <div>
-   
-    </div>
-  );
-}
+//https://api.coingecko.com/api/v3/coins/markets?vs_currency=cad&order=market_cap_desc&per_page=30&page=1&sparkline=false
+function Call() {}
 
 function Coins() {
+  const [coins, setCoins] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=cad&order=market_cap_desc&'
+      )
+      .then((res) => {
+        setCoins(res.data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <div>
       <h1> JOYDEEP DISPLAYING COINS price data </h1>

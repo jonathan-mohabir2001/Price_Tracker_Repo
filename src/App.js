@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import Form from './Form/Form';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
 
       {'   |    '}
 
-      <Link to="/form">Form</Link>
+      <Link to="/contact">Form</Link>
       {'   |    '}
 
    
@@ -26,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/coins" element={<Coins />}></Route>
-          <Route path="/form" element={<Form />}></Route>
+          <Route path="/contact" element={<Form />}></Route>
          
         </Routes>
       </Container>
@@ -117,14 +118,6 @@ function Coins() {
   return (
     <div>
       <h1> JOYDEEP DISPLAYING COINS price data </h1>
-    </div>
-  );
-}
-
-function Form() {
-  return (
-    <div>
-      <h1> Eliaf form component part for audince input </h1>
     </div>
   );
 }

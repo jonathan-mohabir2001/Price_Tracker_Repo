@@ -90,7 +90,7 @@ function HomePage() {
 function Call() {
   return (
     <div>
-      <h1> ZACK AXIOS API CALL to coingecko api </h1>
+   
     </div>
   );
 }

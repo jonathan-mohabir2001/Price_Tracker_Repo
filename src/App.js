@@ -21,13 +21,11 @@ function App() {
       <Link to="/form">Form</Link>
       {'   |    '}
 
-   
       <Container>
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/coins" element={<Coins />}></Route>
           <Route path="/form" element={<Form />}></Route>
-         
         </Routes>
       </Container>
     </div>
@@ -81,7 +79,7 @@ function HomePage() {
             There is no centralized entity that can stop you from entering nor
             leaving the ecosystem.
           </p>
-          <h4>Censorship-Resistant</h4>
+          <h4>Censorship-Resistant - test test test test test </h4>
           <p>
             Layer 1 technologies that rely on proof of work, or proof of stake
             secuirty mechnaisms ensure their security through these two methods.

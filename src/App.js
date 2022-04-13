@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
+import Home from './HomePage/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
@@ -39,7 +39,7 @@ function App() {
       </>
       <div>
         <Routes>
-          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="/home" element={<Home/>}></Route>
           <Route path="/coins" element={<Coins />}></Route>
           <Route path="/contact" element={<Form />}></Route>
         </Routes>
@@ -48,43 +48,7 @@ function App() {
   );
 }
 
-function HomePage() {
-  return (
-    <div>
-      <Container>
-        <br></br>
-        <h3> What even is cryptocurrency?</h3>
-        <p>
-          Like cash, a cryptocurrency can be used as a medium of exchange for
-          any producy or service.
-          <br></br>
-          Cryprocurrency transactions are recorded on a public ledger known as a
-          blockchain. To use cryptocurrency, an individual needs to create a
-          "wallet address". There is no need for a
-        </p>
-        <br></br>
 
-        <h3>Why is it called Crypto Currency?</h3>
-        <p>
-          Cryptography is the main point. Cryptography allows for secure hashing
-          algorithms to ensure security when funds are moved between two
-          different wallet addresses. Cryptocurrency solves the "double
-          spending" problem as the blockchain can allow for tracking of funds at
-          any given point of time.
-        </p>
-
-        <h3> So why should we even consider using it?</h3>
-        <br></br>
-
-        <h4>It is permisionless</h4>
-        <p>
-          No centralized entity can dictate your use with it. Whether it be
-          creating a new wallet address,
-        </p>
-      </Container>
-    </div>
-  );
-}
 
 //https://api.coingecko.com/api/v3/coins/markets?vs_currency=cad&order=market_cap_desc&per_page=30&page=1&sparkline=false
 function Call() {}

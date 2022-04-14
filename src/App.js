@@ -46,8 +46,17 @@ function App() {
           <Route path="/coins" element={<Coins />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Form />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </div>
+    </div>
+  );
+}
+
+function NotFound() {
+  return (
+    <div>
+      <h4> ERROR, page not found </h4>
     </div>
   );
 }

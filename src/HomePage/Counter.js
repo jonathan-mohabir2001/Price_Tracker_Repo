@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Col, Row, Card, Button, CardImg } from 'react-bootstrap';
 
-import Image from 'react-bootstrap/Image';
+import Bitcoin from '../HomePage/Bitcoin.jpg';
 
 let Counter = () => {
   let [state, setState] = useState({
@@ -25,8 +25,8 @@ let Counter = () => {
       <Container className="mt-3">
         <Row>
           <Col>
-            <Card className="shadow-lg">
-              <Card.Img src="./BTCcover.jpg"></Card.Img>
+            <Card style={{ width: '40rem' }}>
+              <Card.Img src={Bitcoin}></Card.Img>
 
               <Card.Body>
                 <p className="display-3"> {state.count} </p>

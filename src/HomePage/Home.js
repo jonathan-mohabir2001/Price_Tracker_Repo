@@ -19,7 +19,7 @@ function Home() {
             dictate an individuals participation within any ecosystem
           </p>
           <br></br>
-          
+
           <h3 className="home-h3">Why is it called Crypto Currency?</h3>
           <p className="home-p">
             Cryptography is the main point. Cryptography allows for secure
@@ -32,19 +32,20 @@ function Home() {
           <h3 className="home-h3"> So why should we even consider using it?</h3>
           <br></br>
 
-          <h4>It is permisionless</h4>
+          <h4 className="home-h4">It is permisionless</h4>
           <p className="home-p">
             No centralized entity can dictate your use with it. Whether it be
             creating a new wallet address,
           </p>
         </div>
 
-        <div className= 'interaction-counter'>
-          <h3 className='home=h3'> How much Bitcoin would you have bought in 2010 for a price of $0.01?</h3>
-          <Counter/>
-
+        <div className="interaction-counter">
+          <h3 className="home=h3">
+            {' '}
+            How much Bitcoin would you have bought in 2010 for a price of $0.01?
+          </h3>
+          <Counter />
         </div>
-       
       </Container>
     </div>
   );

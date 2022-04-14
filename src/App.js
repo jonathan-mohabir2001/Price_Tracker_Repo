@@ -8,13 +8,10 @@ import axios from 'axios';
 
 import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
 
-import Badge from 'react-bootstrap/Badge';
-
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
 import Form from './Form/Form';
 import './App.css';
+import About from './About';
 
 function App() {
   return (
@@ -22,16 +19,19 @@ function App() {
       <>
         <Navbar bg="dark" expand="sm" variant="dark">
           <Container>
-            <Navbar.Brand href="#home"> CRYPTO TRACKER</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/"> CRYPTO TRACKER</Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/home">
+              <Nav.Link as={Link} to="/" className='nav-btn'>
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/coins">
-                Coin price information
+              <Nav.Link as={Link} to="/coins" className='nav-btn'>
+                Coins
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact">
-                Contact group 1{' '}
+              <Nav.Link as={Link} to="/about" className='nav-btn'>
+                About Us{' '}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/contact" className='nav-contact-btn'>
+                Contact Us{' '}
               </Nav.Link>
             </Nav>
           </Container>
@@ -39,8 +39,9 @@ function App() {
       </>
       <div>
         <Routes>
-          <Route path="/home" element={<Home/>}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/coins" element={<Coins />}></Route>
+          <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Form />}></Route>
         </Routes>
       </div>
@@ -51,7 +52,7 @@ function App() {
 
 
 //https://api.coingecko.com/api/v3/coins/markets?vs_currency=cad&order=market_cap_desc&per_page=30&page=1&sparkline=false
-function Call() {}
+function Call() { }
 
 function Coins() {
   const [coins, setCoins] = useState([]);
@@ -68,8 +69,10 @@ function Coins() {
   }, []);
 
   return (
-    <div>
-      <h1> JOYDEEP DISPLAYING COINS price data </h1>
+    <div className='coins-main'>
+      <Container>
+        <h1> JOYDEEP DISPLAYING COINS price data </h1>
+      </Container>
     </div>
   );
 }

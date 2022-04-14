@@ -6,13 +6,9 @@ import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 
-import { Navbar, Nav, NavbarBrand, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
 
-import Badge from 'react-bootstrap/Badge';
-
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
 import Form from './Form/Form';
 import './App.css';
 import About from './About';

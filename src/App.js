@@ -19,18 +19,21 @@ function App() {
       <>
         <Navbar bg="dark" expand="sm" variant="dark">
           <Container>
-            <Navbar.Brand as={Link} to="/"> CRYPTO TRACKER</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/">
+              {' '}
+              CRYPTO TRACKER
+            </Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/" className='nav-btn'>
+              <Nav.Link as={Link} to="/" className="nav-btn">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/coins" className='nav-btn'>
+              <Nav.Link as={Link} to="/coins" className="nav-btn">
                 Coins
               </Nav.Link>
-              <Nav.Link as={Link} to="/about" className='nav-btn'>
+              <Nav.Link as={Link} to="/about" className="nav-btn">
                 About Us{' '}
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact" className='nav-contact-btn'>
+              <Nav.Link as={Link} to="/contact" className="nav-contact-btn">
                 Contact Us{' '}
               </Nav.Link>
             </Nav>
@@ -49,10 +52,8 @@ function App() {
   );
 }
 
-
-
 //https://api.coingecko.com/api/v3/coins/markets?vs_currency=cad&order=market_cap_desc&per_page=30&page=1&sparkline=false
-function Call() { }
+function Call() {}
 
 function Coins() {
   const [coins, setCoins] = useState([]);
@@ -64,12 +65,13 @@ function Coins() {
       )
       .then((res) => {
         setCoins(res.data);
+        console.log(res.data);
       })
       .catch((error) => console.log(error));
   }, []);
 
   return (
-    <div className='coins-main'>
+    <div className="coins-main">
       <Container>
         <h1> JOYDEEP DISPLAYING COINS price data </h1>
       </Container>

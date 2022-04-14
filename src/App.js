@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { useState } from 'react';
+import Home from './HomePage/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import axios from 'axios';
 
 import { Navbar, Nav, NavbarBrand, Button } from 'react-bootstrap';
 
@@ -38,7 +39,7 @@ function App() {
       </>
       <div>
         <Routes>
-          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="/home" element={<Home/>}></Route>
           <Route path="/coins" element={<Coins />}></Route>
           <Route path="/contact" element={<Form />}></Route>
         </Routes>
@@ -47,26 +48,25 @@ function App() {
   );
 }
 
-function HomePage() {
-  return (
-    <div>
-      <>
-        <Button> Test button </Button>
-      </>
-      ;
-    </div>
-  );
-}
 
-function Call() {
-  return (
-    <div>
-      <h1> ZACK AXIOS API CALL to coingecko api </h1>
-    </div>
-  );
-}
+
+//https://api.coingecko.com/api/v3/coins/markets?vs_currency=cad&order=market_cap_desc&per_page=30&page=1&sparkline=false
+function Call() {}
 
 function Coins() {
+  const [coins, setCoins] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=cad&order=market_cap_desc&'
+      )
+      .then((res) => {
+        setCoins(res.data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <div>
       <h1> JOYDEEP DISPLAYING COINS price data </h1>

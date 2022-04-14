@@ -20,6 +20,8 @@ function About() {
                 Coordinated group project, created home page focusing on react
                 boostrap to create home page for brief information on
                 cryptocurrency and what makes it unique.
+
+                Helped incorporate css into coin information  page.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -32,6 +34,7 @@ function About() {
               <Card.Text className="text-white">
                 Used API information to create table that displays coin
                 information coming from the API.
+     
               </Card.Text>
             </Card.Body>
           </Card>
@@ -44,6 +47,8 @@ function About() {
               <Card.Text className="text-white">
                 Developed AXIOS call to retreive information from the CoinGetcko
                 API in order to display coin information.
+
+                Helped incorporate css into coin information  page. 
               </Card.Text>
             </Card.Body>
           </Card>

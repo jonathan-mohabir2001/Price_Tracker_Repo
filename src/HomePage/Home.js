@@ -35,7 +35,23 @@ function Home() {
           <h4 className="home-h4">It is permisionless</h4>
           <p className="home-p">
             No centralized entity can dictate your use with it. Whether it be
-            creating a new wallet address,
+            creating a new wallet address, or sending funds to another individual with a wallet. 
+          </p>
+          <h4 className="home-h4">It is censorship resistant</h4>
+          <p className="home-p">
+            Layer 1 "blue chip" coins, such as BTC, ETH rely on a security a mechanisim called 
+            proof of work. This allows for a consesus within the network, this is used to broadcast new blocks 
+            and validate transactions. 
+            Computational power is spent by miners who use very powerful GPUs to solve mathematical problems.   
+          </p>
+
+          <h4 className="home-h4">Cheap-fast payment methods</h4>
+          
+          <p className='home-p'>
+
+            Transactions can happen almost instantley. 
+
+
           </p>
         </div>
 

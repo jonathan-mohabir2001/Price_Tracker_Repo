@@ -34,6 +34,8 @@ function About() {
               <Card.Text className="text-white">
                 Used API information to create table that displays coin
                 information coming from the API.
+
+                Designed CSS for coin information page. 
      
               </Card.Text>
             </Card.Body>

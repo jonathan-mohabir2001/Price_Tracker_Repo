@@ -86,14 +86,25 @@ body {
 }
 .coin-price{
   width: 110px;
+  
+
 }
 .coin-volume{
   width: 200px;
 
 
 }
+
+
+
+.column-price{
+
+
+  bottom: 50px;
+}
+
 .coin-marketcap{
-  width: 240px;
+  width: 230px;
 }
 .coin-percent{
   width: 80px;
@@ -105,6 +116,7 @@ body {
 .green{
   color: green;
 }
+
 
 .coin-app{
   display: flex;

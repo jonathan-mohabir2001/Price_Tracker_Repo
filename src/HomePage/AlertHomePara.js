@@ -21,6 +21,15 @@ function AlertHomePara() {
           anyone's participation within any given ecosystem.
         </p>
       </Alert>
+
+      <div>
+
+      <Button onClick={() => setShow(false)} variant="outline-success">
+            Close me y'all!
+          </Button>
+
+      </div>
+
     </div>
   );
 }

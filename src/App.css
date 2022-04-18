@@ -40,8 +40,11 @@ a:visited {
   margin-bottom: 70px;
 }
 
+
+
 .home-h3 {
   margin-top: 20px;
+  text-align: center;
 }
 
 .home-h4{
@@ -239,4 +242,58 @@ td {
   width: 50%;
   text-align: center;
   color: red;
+}
+
+/* HOME PAGE BUTTON CSS */ 
+
+.button-container{
+  position: relative;
+
+  width:500px; 
+  height: 350px;
+  border-radius: 40px;
+  background-color: purple;
+
+
+  display: grid;
+  
+  width: 100% - 30px;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.button-here-is{
+  text-align: center;
+}
+
+.button-paragraph{
+  text-align: left;
+}
+
+.button-footer{
+  display:flex;
+  justify-content: flex-end;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  color: #8426af;
+}
+
+.openButtonBtn {
+
+  display:flex;
+  justify-content: flex-end;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  color: #8426af;
+}
+
+
+.why-called-crypto{
+  display: block; 
+
+}
+
+.mt-3{
+  display: flex;
+  width: 300px;
 }

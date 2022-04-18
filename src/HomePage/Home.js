@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import AlertHomePara from './AlertHomePara';
+import AlertParaHome from './AlertParaHome';
+import { useState } from 'react';
 import Counter from './Counter';
 function Home() {
+  const [openButton, setOpenButton] = useState(false);
+
   return (
     <div className="jonDiv">
       <Container>
@@ -10,25 +13,33 @@ function Home() {
           <h1 className="home-title">Cryptocurrency Tracker</h1>
 
           <div className="home-first-paragraph">
-            <h3 className="home-h3"> What even is cryptocurrency?</h3>
-      
-
-          <span>
-
-            <AlertHomePara/>
-           </span>
-           </div>
+            <span>
+              <h3 className="home-h1"> What even is a cryptocurrency?</h3>
+              <button
+                className="openButtonBtn"
+                onClick={() => {
+                  setOpenButton(true);
+                }}
+              >
+                {' '}
+                Click me to find out!
+              </button>
+              {openButton && <AlertParaHome closeButton={setOpenButton} />}
+            </span>
+          </div>
 
           <br></br>
 
-          <h3 className="home-h3">Why is it called Crypto Currency?</h3>
-          <p className="home-p">
-            Cryptography is the main point. Cryptography allows for secure
-            hashing algorithms to ensure security when funds are moved between
-            two different wallet addresses. Cryptocurrency solves the "double
-            spending" problem as the blockchain can allow for tracking of funds
-            at any given point of time.
-          </p>
+          <div className="why-called-crypto">
+            <h3 className="home-h2">Why is it called Crypto Currency?</h3>
+            <p className="home-p">
+              Cryptography is the main point. Cryptography allows for secure
+              hashing algorithms to ensure security when funds are moved between
+              two different wallet addresses. Cryptocurrency solves the "double
+              spending" problem as the blockchain can allow for tracking of
+              funds at any given point of time.
+            </p>
+          </div>
 
           <h3 className="home-h3"> So why should we even consider using it?</h3>
           <br></br>

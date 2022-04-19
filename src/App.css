@@ -29,6 +29,7 @@ a:visited {
 /* HOME PAGE CSS */
 .jonDiv {
   color: antiquewhite;
+  margin-bottom: 10%;
 }
 
 .home-main {
@@ -57,6 +58,10 @@ a:visited {
 .home-p {
   font-size: 18px;
   margin-top: 20px;
+}
+
+.home-image-captions {
+  background-color: rgba(0, 0, 0, 0.61);
 }
 
 /* COINS PAGE CSS */
@@ -265,11 +270,6 @@ td {
   justify-content: center;
 }
 
-.openButtonBtn{
-  display: flex;
-  justify-content: center;
-}
-
 .button-footer{
   display:flex;
   justify-content: flex-end;
@@ -279,12 +279,13 @@ td {
 }
 
 .openButtonBtn {
-
-  display:flex;
+  display:block;
   justify-content: flex-end;
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
   color: #8426af;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-h1{
@@ -294,7 +295,7 @@ td {
 .carousel-section{
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 15%;
 }
 
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import AlertParaHome from './AlertParaHome';
 import { useState } from 'react';
-import Counter from './Counter';
 import CarouselHome from './CarouselHome';
 function Home() {
   const [openButton, setOpenButton] = useState(false);

@@ -37,9 +37,13 @@ a:visited {
 
 .home-title {
   text-align: center;
-  margin-bottom: 70px;
-}
+  margin-bottom: 90px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+.home-h1{
+  text-align: center;
+}
 
 
 .home-h3 {
@@ -247,27 +251,23 @@ td {
 /* HOME PAGE BUTTON CSS */ 
 
 .button-container{
-  position: relative;
-
+  text-align: center;
   width:500px; 
   height: 350px;
   border-radius: 40px;
   background-color: purple;
-
-
-  display: grid;
-  
-  width: 100% - 30px;
   flex-direction: column;
   padding: 40px;
 }
 
-.button-here-is{
-  text-align: center;
+.button-background{
+  display: flex;
+  justify-content: center;
 }
 
-.button-paragraph{
-  text-align: left;
+.openButtonBtn{
+  display: flex;
+  justify-content: center;
 }
 
 .button-footer{
@@ -287,13 +287,59 @@ td {
   color: #8426af;
 }
 
-
-.why-called-crypto{
-  display: block; 
-
+.home-h1{
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.mt-3{
+.carousel-section{
   display: flex;
-  width: 300px;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+
+.bitcoin-slide-1{
+ position: relative;
+ margin: 0;
+ padding: 0;
+  margin-bottom: 30px;
+  color: whitesmoke; 
+}
+.bitcoin-image-1 {
+  position: relative;
+ 
+  vertical-align: -30px;
+  margin-bottom: 30px;
+}
+
+.alt-coins-image-2{
+  position: relative;
+  margin: 100;
+  padding: 100;
+  margin-bottom: 30px;
+}
+
+.eth-coin-image-3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.main-description-1{
+  flex-direction: column;
+}
+.main-description-2{
+  flex-direction: column;
+}
+
+
+.desc-title-2{
+  text-align: center;
+}
+.desc-title-3{
+  text-align: center;
+}
+.desc-title-4{
+  text-align: center;
 }

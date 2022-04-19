@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import AlertParaHome from './AlertParaHome';
 import { useState } from 'react';
 import Counter from './Counter';
+import CarouselHome from './CarouselHome';
 function Home() {
   const [openButton, setOpenButton] = useState(false);
 
@@ -27,49 +28,54 @@ function Home() {
               {openButton && <AlertParaHome closeButton={setOpenButton} />}
             </span>
           </div>
+        </div>
 
+        <div className="carousel-section">
+          <CarouselHome />
+        </div>
+
+        <div className="main-description-1">
+          <h3> So why, is it called Cryptocurrency?</h3>
+
+          <p>
+            Cryptography is the main point. Cryptography allows for secure
+            communication in the presence of an adversary. Secure hashing
+            algorithims
+            <br></br>
+            Cryptocurrency solves the "double spending" problem as the
+            blockchain can allow for tracking of funds at any given point of
+            time.
+          </p>
+        </div>
+
+        <div className="main-description-2">
+          <h3 className="desc-title-1">Why should we consider using it?</h3>
           <br></br>
 
-          <div className="why-called-crypto">
-            <h3 className="home-h2">Why is it called Crypto Currency?</h3>
-            <p className="home-p">
-              Cryptography is the main point. Cryptography allows for secure
-              hashing algorithms to ensure security when funds are moved between
-              two different wallet addresses. Cryptocurrency solves the "double
-              spending" problem as the blockchain can allow for tracking of
-              funds at any given point of time.
-            </p>
-          </div>
-
-          <h3 className="home-h3"> So why should we even consider using it?</h3>
-          <br></br>
-
-          <h4 className="home-h4">It is permisionless</h4>
-          <p className="home-p">
+          <h4 className="desc-title-2"> It is permisonless </h4>
+          <p>
             No centralized entity can dictate your use with it. Whether it be
             creating a new wallet address, or sending funds to another
             individual with a wallet.
           </p>
-          <h4 className="home-h4">It is censorship resistant</h4>
-          <p className="home-p">
-            Layer 1 "blue chip" coins, such as BTC, ETH rely on a security a
-            mechanisim called proof of work. This allows for a consesus within
+
+          <h4 className="desc-title-3">It is censorship resistant</h4>
+
+          <p>
+            Layer 1 "blue-chip" coins like BTC and ETH rely on a security
+            mechanisim called proof of work. This allows for consensus within
             the network, this is used to broadcast new blocks and validate
-            transactions. Computational power is spent by miners who use very
-            powerful GPUs to solve mathematical problems.
+            transactions.
+            <br></br>
+            Computational power is spent by miners who use very powerful GPUs to
+            solve mathematical problems.
           </p>
 
-          <h4 className="home-h4">Cheap-fast payment methods</h4>
+          <h4 className="desc-title-4">
+            Cheap and fast payment methods / Money transfers
+          </h4>
 
-          <p className="home-p">Transactions can happen almost instantley.</p>
-        </div>
-
-        <div className="interaction-counter">
-          <h3 className="home=h3">
-            {' '}
-            How much Bitcoin would you have bought in 2010 for a price of $0.01?
-          </h3>
-          <Counter />
+          <p>Transactions happen almost instantly</p>
         </div>
       </Container>
     </div>

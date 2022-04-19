@@ -39,7 +39,7 @@ function Home() {
           <p>
             Cryptography is the main point. Cryptography allows for secure
             communication in the presence of an adversary. Secure hashing
-            algorithims
+            algorithims are utilized to secure any transaction that happens on chain. 
             <br></br>
             Cryptocurrency solves the "double spending" problem as the
             blockchain can allow for tracking of funds at any given point of
